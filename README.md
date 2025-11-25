@@ -139,16 +139,7 @@ Your Excel file should contain these columns:
 2. Set root directory to `frontend`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-
-## License
-
-MIT License - feel free to use this project for your portfolio or learning.
-
-## Author
-
-**Your Name**
-- Portfolio: [your-portfolio.com]
-- GitHub: [@yourusername](https://github.com/yourusername)
+Hub: [@yourusername](https://github.com/yourusername)
 
 ---
 
