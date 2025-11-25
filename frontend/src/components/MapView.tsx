@@ -70,7 +70,6 @@ function MapView({ shipments }: MapViewProps) {
   if (shipments.length === 0) {
     return (
       <div className="card text-center py-12">
-        <div className="text-6xl mb-4">🗺️</div>
         <h3 className="text-lg font-medium text-gray-900 mb-2">
           No shipments to display
         </h3>
