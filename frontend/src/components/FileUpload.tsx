@@ -81,17 +81,20 @@ function FileUpload({ onUpload }: FileUploadProps) {
         </div>
       )}
 
-      <div className="mt-4 p-3 bg-blue-50 rounded-lg">
-        <p className="text-xs text-blue-800 mb-2 font-medium">
+      <div className="mt-4 p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+        <p className="text-sm text-green-800 mb-2 font-semibold">
           📥 Need sample data?
         </p>
         <a
-          href="https://github.com/Harshm27/logistics-dashboard-v2/raw/main/Sample_Data.xlsx"
+          href="https://github.com/Harshm27/logistics-analytics-dashboard/raw/main/Sample_Data.xlsx"
           download="Sample_Data.xlsx"
-          className="text-xs text-blue-600 hover:underline"
+          className="inline-block px-4 py-2 bg-green-500 text-white text-sm font-medium rounded-md hover:bg-green-600 transition-colors"
         >
-          Download Sample Excel File →
+          ⬇️ Download Sample Excel File
         </a>
+        <p className="text-xs text-green-700 mt-2">
+          Contains example shipments to test the dashboard
+        </p>
       </div>
     </div>
   );
