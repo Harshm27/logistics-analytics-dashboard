@@ -37,37 +37,50 @@ git push -u origin main
 
 ## 🎨 Frontend Deployment (Vercel)
 
-### Step 1: Update API URL
-
-Create `frontend/.env.production`:
-```
-VITE_API_URL=https://your-backend-url.onrender.com
-```
-
-### Step 2: Deploy to Vercel
+### Step 1: Deploy to Vercel
 
 1. Go to https://vercel.com
 2. Click **"Add New"** → **"Project"**
-3. Import your GitHub repository
+3. Import your GitHub repository: `Harshm27/logistics-analytics-dashboard`
 4. Configure:
    - **Root Directory**: `frontend`
    - **Framework Preset**: Vite
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
-5. Add environment variable:
-   - `VITE_API_URL` = your Render backend URL
-6. Click **"Deploy"**
+
+### Step 2: Add Environment Variable
+
+**IMPORTANT:** Before deploying, add the environment variable:
+
+1. In the Vercel project setup, scroll to **"Environment Variables"**
+2. Click **"Add"** or **"Add Another"**
+3. Enter:
+   - **Name**: `VITE_API_URL`
+   - **Value**: `https://your-backend-url.onrender.com` (use your actual Render URL from Step 2 above)
+   - **Environment**: Select all (Production, Preview, Development)
+4. Click **"Save"**
+
+### Step 3: Deploy
+
+1. Click **"Deploy"**
+2. Wait for build to complete
+3. Your frontend will be live at: `https://your-project.vercel.app`
 
 ## 🌐 Alternative: Netlify
 
 1. Go to https://netlify.com
 2. **"Add new site"** → **"Import an existing project"**
-3. Connect GitHub repository
+3. Connect GitHub repository: `Harshm27/logistics-analytics-dashboard`
 4. Configure:
    - **Base directory**: `frontend`
    - **Build command**: `npm run build`
    - **Publish directory**: `dist`
-5. Add environment variable: `VITE_API_URL`
+5. **Add environment variable:**
+   - Go to **"Site settings"** → **"Environment variables"**
+   - Click **"Add a variable"**
+   - **Key**: `VITE_API_URL`
+   - **Value**: `https://your-backend-url.onrender.com` (your Render backend URL)
+   - Click **"Save"**
 6. Deploy!
 
 ## ✅ Verify Deployment
