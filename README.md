@@ -139,7 +139,6 @@ Your Excel file should contain these columns:
 2. Set root directory to `frontend`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-Hub: [@yourusername](https://github.com/yourusername)
 
 ---
 
