@@ -93,7 +93,7 @@ function FileUpload({ onUpload }: FileUploadProps) {
           ⬇️ Download Sample Excel File
         </a>
         <p className="text-xs text-green-700 mt-2">
-          Contains example shipments to test the dashboard
+          Contains 15 example shipments to test the dashboard
         </p>
       </div>
     </div>
