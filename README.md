@@ -1,17 +1,28 @@
-# 🚚 Logistics Analytics Dashboard
+# Logistics Analytics Dashboard
 
-A modern, full-stack logistics management platform for analyzing shipment data, visualizing routes, and comparing shipping options.
+A full-stack web application for managing and analyzing shipment data. The platform allows users to upload Excel files containing shipment information, visualize routes on an interactive map, compare shipping rates across multiple carriers, and generate analytics insights to optimize logistics operations.
 
-## ✨ Features
+## What This Project Does
 
-- **📊 Data Import**: Upload Excel files with shipment data
-- **🗺️ Interactive Maps**: Visualize shipment routes with geocoding
-- **💰 Rate Comparison**: Compare shipping rates across carriers
-- **📈 Analytics**: Comprehensive analytics and insights
-- **🔍 Advanced Filtering**: Filter by country, carrier, date, weight, and more
-- **📥 Export**: Download filtered data and reports
+This dashboard processes bulk shipment data from Excel files and provides:
 
-## 🛠️ Tech Stack
+1. **Data Processing**: Parses Excel files containing shipment details including pickup/delivery locations, dates, carriers, weights, and costs
+2. **Route Visualization**: Displays all shipment routes on an interactive map with geocoding to show pickup and delivery locations
+3. **Rate Comparison**: Calculates and compares shipping rates from multiple carriers (Royal Mail, DPD, DHL, FedEx, UPS, ParcelForce) for each shipment route
+4. **Analytics Dashboard**: Generates visual analytics including shipment volume by country, cost analysis, weight distribution, and carrier performance metrics
+5. **Advanced Filtering**: Filter shipments by country, carrier, date range, weight, and transport mode to analyze specific subsets of data
+6. **Data Table View**: Display all shipment data in a sortable, searchable table format
+
+## Features
+
+- **Data Import**: Upload Excel files with shipment data
+- **Interactive Maps**: Visualize shipment routes with geocoding
+- **Rate Comparison**: Compare shipping rates across carriers
+- **Analytics**: Comprehensive analytics and insights
+- **Advanced Filtering**: Filter by country, carrier, date, weight, and more
+- **Export**: Download filtered data and reports
+
+## Tech Stack
 
 ### Frontend
 - React 18 with TypeScript
@@ -25,7 +36,7 @@ A modern, full-stack logistics management platform for analyzing shipment data, 
 - RESTful API design
 - Mock shipping rate data (no external API dependencies)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+ and npm
@@ -72,7 +83,7 @@ npm run dev
 http://localhost:5173
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 logistics-dashboard-v2/
@@ -93,7 +104,7 @@ logistics-dashboard-v2/
 └── README.md
 ```
 
-## 📊 Excel File Format
+## Excel File Format
 
 Your Excel file should contain these columns:
 
@@ -110,9 +121,9 @@ Your Excel file should contain these columns:
 | Weight (kg) | Yes | Package weight |
 | Cost | Yes | Shipping cost |
 
-**📥 [Download Sample Excel File](./Sample_Data.xlsx)**
+[Download Sample Excel File](./Sample_Data.xlsx)
 
-## 🌐 Deployment
+## Deployment
 
 ### Backend (Render/Railway/Vercel)
 
@@ -129,11 +140,11 @@ Your Excel file should contain these columns:
 3. Build command: `npm run build`
 4. Output directory: `dist`
 
-## 📝 License
+## License
 
 MIT License - feel free to use this project for your portfolio or learning.
 
-## 👤 Author
+## Author
 
 **Your Name**
 - Portfolio: [your-portfolio.com]
@@ -141,5 +152,5 @@ MIT License - feel free to use this project for your portfolio or learning.
 
 ---
 
-⭐ Star this repo if you find it useful!
+Star this repo if you find it useful!
 
